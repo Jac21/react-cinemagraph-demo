@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Cinemagraph } from "react-cinemagraph";
 
+import "./App.css";
+
 class App extends Component {
   state = {
     fallbackImage: "./assets/Disco.jpg",
@@ -56,18 +58,20 @@ class App extends Component {
           isSepia={this.state.isSepia}
           isBlurred={this.state.isBlurred}
         />
-        <button id="black-and-white-button" onClick={this.setBlackAndWhite}>
-          Set to Black and White
+        <div className="button-wrapper">
+          <button id="black-and-white-button" onClick={this.setBlackAndWhite}>
+            Set to Black and White
         </button>
-        <button id="sepia-button" onClick={this.setSepia}>
-          Set to Sepia
+          <button id="sepia-button" onClick={this.setSepia}>
+            Set to Sepia
         </button>
-        <button id="blurred-button" onClick={this.setBlurred}>
-          Set to Blurred
+          <button id="blurred-button" onClick={this.setBlurred}>
+            Set to Blurred
         </button>
-        <button id="reset-button" onClick={this.reset}>
-          Reset
+          <button id="reset-button" onClick={this.reset}>
+            Reset
         </button>
+        </div>
       </div>
     );
   }
