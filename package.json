@@ -2,6 +2,7 @@
   "name": "react-cinemagraph-demo",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jac21.github.io/react-cinemagraph-demo/",
   "dependencies": {
     "react": "^16.4.1",
     "react-cinemagraph": "^1.1.6",
