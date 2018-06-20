@@ -3,12 +3,16 @@ import { Cinemagraph } from "react-cinemagraph";
 
 import "./App.css";
 
+import discoJpg from "./assets/Disco.jpg";
+import discoMp4 from "./assets/Disco.mp4";
+import discoWebM from "./assets/Disco.webm";
+
 class App extends Component {
   state = {
-    fallbackImage: "./assets/Disco.jpg",
+    fallbackImage: discoJpg,
     fallbackImageAlt: "Disco",
-    mp4Source: "./assets/Disco.mp4",
-    webmSource: "./assets/Disco.webm",
+    mp4Source: discoMp4,
+    webmSource: discoWebM,
     isBlackAndWhite: false,
     isSepia: false,
     isBlurred: false
@@ -61,16 +65,16 @@ class App extends Component {
         <div className="button-wrapper">
           <button id="black-and-white-button" onClick={this.setBlackAndWhite}>
             Set to Black and White
-        </button>
+          </button>
           <button id="sepia-button" onClick={this.setSepia}>
             Set to Sepia
-        </button>
+          </button>
           <button id="blurred-button" onClick={this.setBlurred}>
             Set to Blurred
-        </button>
+          </button>
           <button id="reset-button" onClick={this.reset}>
             Reset
-        </button>
+          </button>
         </div>
       </div>
     );
