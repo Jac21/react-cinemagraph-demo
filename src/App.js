@@ -72,7 +72,11 @@ class App extends Component {
           <button id="blurred-button" onClick={this.setBlurred}>
             Set to Blurred
           </button>
-          <button id="reset-button" onClick={this.reset}>
+          <button
+            id="reset-button"
+            className="secondary-button"
+            onClick={this.reset}
+          >
             Reset
           </button>
         </div>

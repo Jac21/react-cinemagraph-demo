@@ -18,6 +18,7 @@ button {
     -webkit-appearance: none;
     -moz-appearance: none;
     margin: .5em .5em;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.5);
 }
 
 button:hover,
@@ -32,4 +33,13 @@ button:focus {
 
 button:active {
     transform: scale(0.99);
+}
+
+.secondary-button {
+    background: #FF9E00;
+}
+
+.secondary-button:hover,
+.secondary-button:focus {
+    background: #CC7E00;
 }
