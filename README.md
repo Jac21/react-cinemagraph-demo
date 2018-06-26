@@ -39,6 +39,8 @@ import { Cinemagraph } from 'react-cinemagraph';
 
 class Demo extends Component {
   state = {
+    height: 50,
+    maxHeight: 100,
     fallbackImage: './demo/assets/Disco.jpg',
     fallbackImageAlt: 'Disco',
     mp4Source: './demo/assets/Disco.mp4',
@@ -52,6 +54,51 @@ class Demo extends Component {
     return (
       <div>
         <Cinemagraph
+          height={this.state.height}
+          maxHeight={this.state.maxHeight}
+          fallbackImage={this.state.fallbackImage}
+          fallbackImageAlt={this.state.fallbackImageAlt}
+          mp4Source={this.state.mp4Source}
+          webmSource={this.state.webmSource}
+          isBlackAndWhite={this.state.isBlackAndWhite}
+          isSepia={this.state.isSepia}
+          isBlurred={this.state.isBlurred}
+        />
+      </div>
+    );
+  }
+}
+```
+
+Alternatively (and [preferably, if using webpack](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-images-fonts-and-files)):
+
+```javascript
+import React from 'react';
+import { Cinemagraph } from 'react-cinemagraph';
+
+import discoJpg from './assets/Disco.jpg';
+import discoMp4 from './assets/Disco.mp4';
+import discoWebM from './assets/Disco.webm';
+
+class Demo extends Component {
+  state = {
+    height: 50,
+    maxHeight: 100,
+    fallbackImage: discoJpg,
+    fallbackImageAlt: 'Disco',
+    mp4Source: discoMp4,
+    webmSource: discoWebM,
+    isBlackAndWhite: false,
+    isSepia: false,
+    isBlurred: false
+  };
+
+  render() {
+    return (
+      <div>
+        <Cinemagraph
+          height={this.state.height}
+          maxHeight={this.state.maxHeight}
           fallbackImage={this.state.fallbackImage}
           fallbackImageAlt={this.state.fallbackImageAlt}
           mp4Source={this.state.mp4Source}
@@ -68,7 +115,19 @@ class Demo extends Component {
 
 ## Props 🎞
 
-Every prop from [`react-cinemagraph`](https://github.com/Jac21/react-cinemagraph#props) (fallbackImage, fallbackImageAlt, mp4Source, webmSource, isBlackAndWhite, isSepia, isBlurred)
+Every prop from [`react-cinemagraph`](https://github.com/Jac21/react-cinemagraph#props) (height, maxHeight, fallbackImage, fallbackImageAlt, mp4Source, webmSource, isBlackAndWhite, isSepia, isBlurred)
+
+## height
+
+Type: Number **(Is Required)**
+
+Height of Cinemagraph in _VW_ units relative to window's width.
+
+## maxHeight
+
+Type: Number **(Is Required)**
+
+Maximum height of Cinemagraph in _VH_ units relative to window's height.
 
 ## fallbackImage
 

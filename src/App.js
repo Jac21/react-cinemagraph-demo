@@ -3,16 +3,18 @@ import { Cinemagraph } from "react-cinemagraph";
 
 import "./App.css";
 
-import discoJpg from "./assets/Disco.jpg";
-import discoMp4 from "./assets/Disco.mp4";
-import discoWebM from "./assets/Disco.webm";
+import holidayLightsJpg from "./assets/HolidayLights/HolidayLights.jpg";
+import holidayLightsMp4 from "./assets/HolidayLights/HolidayLights.mp4";
+import holidayLightsWebM from "./assets/HolidayLights/HolidayLights.webm";
 
 class App extends Component {
   state = {
-    fallbackImage: discoJpg,
-    fallbackImageAlt: "Disco",
-    mp4Source: discoMp4,
-    webmSource: discoWebM,
+    height: 45,
+    maxHeight: 100,
+    fallbackImage: holidayLightsJpg,
+    fallbackImageAlt: "Holiday Lights",
+    mp4Source: holidayLightsMp4,
+    webmSource: holidayLightsWebM,
     isBlackAndWhite: false,
     isSepia: false,
     isBlurred: false
@@ -54,6 +56,8 @@ class App extends Component {
     return (
       <div>
         <Cinemagraph
+          height={this.state.height}
+          maxHeight={this.state.maxHeight}
           fallbackImage={this.state.fallbackImage}
           fallbackImageAlt={this.state.fallbackImageAlt}
           mp4Source={this.state.mp4Source}
