@@ -4,9 +4,9 @@
   "private": true,
   "homepage": "https://jac21.github.io/react-cinemagraph-demo/",
   "dependencies": {
-    "react": "^16.13.1",
-    "react-cinemagraph": "^1.2.7",
-    "react-dom": "^16.13.1",
+    "react": "^16.14.0",
+    "react-cinemagraph": "^1.2.11",
+    "react-dom": "^16.14.0",
     "react-scripts": "5.0.1"
   },
   "scripts": {
