@@ -1,9 +1,16 @@
 {
-  "main.css": "static/css/main.b5616859.css",
-  "main.css.map": "static/css/main.b5616859.css.map",
-  "main.js": "static/js/main.baba7e2c.js",
-  "main.js.map": "static/js/main.baba7e2c.js.map",
-  "static/media/HolidayLights.jpg": "static/media/HolidayLights.7a6f7e38.jpg",
-  "static/media/HolidayLights.mp4": "static/media/HolidayLights.9e7d9293.mp4",
-  "static/media/HolidayLights.webm": "static/media/HolidayLights.d15a7045.webm"
+  "files": {
+    "main.css": "/react-cinemagraph-demo/static/css/main.1bdfbc7a.css",
+    "main.js": "/react-cinemagraph-demo/static/js/main.96b2ba4e.js",
+    "static/media/HolidayLights.webm": "/react-cinemagraph-demo/static/media/HolidayLights.ad4e190897b435bf29c1.webm",
+    "static/media/HolidayLights.mp4": "/react-cinemagraph-demo/static/media/HolidayLights.214005ad17e76ce79506.mp4",
+    "static/media/HolidayLights.jpg": "/react-cinemagraph-demo/static/media/HolidayLights.b6ef3020689a36e77b2d.jpg",
+    "index.html": "/react-cinemagraph-demo/index.html",
+    "main.1bdfbc7a.css.map": "/react-cinemagraph-demo/static/css/main.1bdfbc7a.css.map",
+    "main.96b2ba4e.js.map": "/react-cinemagraph-demo/static/js/main.96b2ba4e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1bdfbc7a.css",
+    "static/js/main.96b2ba4e.js"
+  ]
 }
