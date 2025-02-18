@@ -18,7 +18,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1",
+    "gh-pages": "^6.3.0",
     "sw-precache": "^5.2.1"
   },
   "browserslist": {
