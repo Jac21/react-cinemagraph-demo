@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/react-cinemagraph-demo/static/css/main.52f13302.css",
-    "main.js": "/react-cinemagraph-demo/static/js/main.89bef083.js",
+    "main.js": "/react-cinemagraph-demo/static/js/main.199dab93.js",
     "static/media/HolidayLights.webm": "/react-cinemagraph-demo/static/media/HolidayLights.ad4e190897b435bf29c1.webm",
     "static/media/HolidayLights.mp4": "/react-cinemagraph-demo/static/media/HolidayLights.214005ad17e76ce79506.mp4",
     "static/media/HolidayLights.jpg": "/react-cinemagraph-demo/static/media/HolidayLights.b6ef3020689a36e77b2d.jpg",
     "index.html": "/react-cinemagraph-demo/index.html",
     "main.52f13302.css.map": "/react-cinemagraph-demo/static/css/main.52f13302.css.map",
-    "main.89bef083.js.map": "/react-cinemagraph-demo/static/js/main.89bef083.js.map"
+    "main.199dab93.js.map": "/react-cinemagraph-demo/static/js/main.199dab93.js.map"
   },
   "entrypoints": [
     "static/css/main.52f13302.css",
-    "static/js/main.89bef083.js"
+    "static/js/main.199dab93.js"
   ]
 }
